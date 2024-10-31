@@ -1,0 +1,468 @@
+/*
+* Admin Settings Panel CSS
+* @author premiumblog
+* @since 1.1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+/**
+* Utilities
+*/
+.mt-10 {margin-top: 10px !important}
+.mb-10 {margin-bottom: 10px !important}
+.mr-10 {margin-right: 10px !important}
+.ml-10 {margin-left: 10px !important}
+/**
+* Main Wrapper
+*/
+.premiumblog-admin-wrap {
+    width: 99%;
+    /* background-color: #030D4B; */
+    border-radius: 10px;
+    overflow: hidden;
+    /* min-height: 600px; */
+    margin-top: 20px;
+    /* border: 5px solid #030D4B; */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.premiumblog-admin-wrap a {
+    transition: 0.5s all;
+}
+.premiumblog-admin-wrap h1, .premiumblog-admin-wrap h2, .premiumblog-admin-wrap h3, .premiumblog-admin-wrap h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+/**
+* Panel Content
+*/
+.premiumblog-panel-head, .premiumblog-panel-content {
+    width: 100%;
+    overflow: hidden;
+}
+.premiumblog-panel-head {
+    border-radius: 10px;
+    background-color: #e2e1e1;
+    font-family: 'Poppins', sans-serif;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+/* .premiumblog-panel-content {
+    background-color: #F1F4FA;
+    border-radius: 10px;    
+} */
+.premiumblog-panel-head .side-panel-col {
+    padding: 15px;
+}
+.premiumblog-panel-head .panel-logo {
+    display: flex;
+    align-items: center;
+}
+.premiumblog-panel-head .panel-logo .pbw-logo-title {
+    margin-left: 10px;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+}
+/* .premiumblog-panel-head .side-panel-col:last-child {
+    background-color: #fff;
+    flex: 5;
+} */
+.premiumblog-panel-head .side-panel-col:first-child {
+    flex: 1;
+}
+ul.premiumblog-panel-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.premiumblog-panel-tabs li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+ul.premiumblog-panel-tabs li a {
+    display: block;
+    padding: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+ul.premiumblog-panel-tabs li a:hover, ul.premiumblog-panel-tabs li a.active {
+    background-color: #ffffff;
+    color: #030D4B;
+    box-shadow: 0px 6px 6px rgb(53 66 134 / 10%);
+}
+ul.premiumblog-panel-tabs li a > i {
+    margin-right: 10px;
+}
+.premiumblog-panel-content form {
+    padding: 25px;
+}
+.premiumblog-panel-content .panel-section-heading {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+.premiumblog-panel-content .panel-section-subheading {
+    color: #424242;
+    line-height: 1.2;
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 35px;
+}
+.tools-subheading{
+    padding-bottom: 10px !important;;  
+}
+.pbw-builder-notice {
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444444;
+    display: none;
+    width: 43%;
+}
+.page-premiumblog .pbw-builder-notice {
+    display: block;
+}
+.premiumblog-panel-content form #submit {
+    padding: 15px 25px;
+    line-height: 1;
+    border-radius: 7px;
+    /* background-color: #2b00db; */
+    background-color: #019625;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff;
+    transition: 0.5s all;
+}
+.premiumblog-panel-content form p.submit {
+    text-align: right;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.premiumblog-panel-content form #submit:hover {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.premiumblog-panel-content.page-pbw-support form p.submit {
+    display: none;
+}
+
+.widgets-section__header{
+    margin-top: 20px;
+    margin-left: 9px;
+}
+
+/* The Form Fields */
+.form-fields-row {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.form-widgets-row {
+    grid-template-columns: repeat(6, 1fr);
+}
+.tools-fields-row{
+    grid-template-columns: unset;
+    width: 50%;
+}
+.form-field-row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+}
+.form-field-row.sub-row {
+    padding: 0px;
+}
+.form-field-row.hidden, .sub-section-row.hidden {
+    display: none;
+}
+.form-field-row.sub-row .sub-section {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    padding: 15px;
+    border: 2px solid #f0f0f0;
+}
+.form-field-row.sub-row .sub-section .sub-section-col {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.form-field-row.sub-row .sub-section .sub-section-col span, .form-field-row.sub-row .sub-section .sub-section-col select {
+    display: inline-block;
+    line-height: 1;
+}
+.form-field-row.sub-row .sub-section .sub-section-col > span {
+    font-size: 28px;
+}
+.form-field-row.sub-row .sub-section .sub-section-col > span i {
+    position: relative;
+    top: 8px;
+}
+.form-field-row.sub-row .sub-section h4 {
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+    color: #555555;
+}
+.switch-field-box , .pbw-tools-box{
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 1px rgb(51 62 119 / 12%);
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    min-height: 37px;
+    background-color: #fff;
+}
+
+.tools-fields-row .pbw-tools-box{
+    display: inline-block;
+    border-left: 4px solid #019625;
+}
+.tools-fields-row .pbw-tools-box .pbw-setting{
+    padding-bottom: 20px;
+}
+.tools-fields-row .pbw-tools-box .pbw-setting input{
+    border: 1px solid #e8e8e8;
+    width: 98%;
+    padding: 5px 15px;
+}
+.switch-page-builder{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 6px;
+    border: 3px Solid #000000ad;
+}
+
+.switch-page-builder .switch-box-title , .switch-page-builder .switch-box-control ,.switch-page-builder .switch-box-icon{
+    text-align: center;
+}
+.switch-box-icon {
+    margin-bottom: 10px;
+}
+.switch-box-title {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.switch-page-builder .switch-box-title {
+    padding: 12px 0px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.page-pbw-tools .switch-box-title {
+    font-size: 22px;
+}
+.switch-box-icon, .switch-box-control {
+    width: 100%;
+    text-align: end;
+}
+.switch-box-icon img {
+    width: 55%;
+    max-width: 150px;
+}
+.form-fields-row.widgets-row .switch-field-box .switch-box-icon img {
+    width: auto;
+    max-width: 100px;
+}
+.switch-box-md {
+    width: 50%;
+    max-width: 635px;
+    float: left;
+    height: 50px;
+}
+.switch-box-inline {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.switch-box-md .switch-box-title, .switch-box-md .switch-box-control {
+    float: left;
+    height: 100%;
+    line-height: 50px;
+}
+.switch-box-md .switch-box-title {
+    width: 70%;
+    text-align: left;
+}
+.switch-box-md .switch-box-control {
+    width: 30%;
+    text-align: right;
+}
+.switch-box-inline > span {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+.switch-box-inline .switch-box-title {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 5px;
+    bottom: 6px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    /* background-color: #2b00db; */
+    background-color: #019625;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #030D4B;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Support Boxes */
+
+
+
+@media only screen and (max-width: 1130px) {
+    .premiumblog-panel-head {
+        display: block;
+        height: auto;
+        overflow: hidden;
+    }
+    .premiumblog-panel-head .side-panel-col:first-child, .premiumblog-panel-head .side-panel-col:last-child {
+        padding-bottom: 15px;
+    }
+    .premiumblog-panel-head .side-panel-col , .premiumblog-panel-content {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: auto;
+        overflow: hidden;
+    }
+    .form-fields-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+   
+}
+@media only screen and (max-width: 768px) {
+    .premiumblog-admin-wrap {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .premiumblog-panel-head .side-panel-col:first-child, .premiumblog-panel-head .side-panel-col:last-child {
+        padding-bottom: 5px;
+    }
+    ul.premiumblog-panel-tabs li {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .switch-field-box, .form-fields-row.widgets-row .switch-field-box {
+        width: 80%;
+    }
+    
+    .form-fields-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pbw-support-box {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .switch-box-inline {
+        width: 100%;
+        padding: 10px;
+    }
+    .switch-box-inline > span {
+        margin: 0;
+    }
+    .switch-box-inline .switch-box-title {
+        margin-right: 10px;
+    }
+    .form-field-row.sub-row .sub-section .sub-section-col {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+.pbw-new-element:before {
+    content: 'NEW';
+    position: absolute;
+    top: -10px;
+    left: 28px;
+    padding: 1px 7px;
+    color: #fff;
+    background-color: #f44;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

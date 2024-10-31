@@ -1,0 +1,85 @@
+.pbw-mailchimp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.pbw-mailchimp-form {
+    border-color: #E8E8E8;
+    border-style: none;
+    padding: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.pbw-mailchimp-fields {
+    display: flex;
+    align-items: flex-end;
+}
+.pbw-mailchimp-email{
+    flex-grow: 1;
+    margin-right: 10px;
+    
+}
+.pbw-mailchimp-fields input {
+    color: #474747;
+    background-color: #FFFFFF;
+    border-color: #e8e8e8;
+    transition-duration: 0.1s;
+    height: 45px;
+    line-height: 45px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 0px 15px 0px 15px;
+    border-radius: 2px 2px 2px 2px;
+    width: 100%;
+}
+.pbw-mailchimp-subscribe{
+    width: 132px;
+}
+.pbw-mailchimp-subscribe-btn {
+    color: #ffffff;
+    border-color: #E6E2E2;
+    transition-duration: 0.1s;
+    height: 45px;
+    border-style: none;
+    border-radius: 2px 2px 2px 2px;
+    background-color: #000000;
+   
+}
+.pbw-mailchimp-subscribe-btn:hover {
+   background-color: #019625;
+   box-shadow: rgb(0 0 0 / 15%) 0px 4px 6px;
+}
+.pbw-mailchimp-message {
+    background-color: #FFFFFF;
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+}
+.pbw-mailchimp-success-message {
+    color: #333333;
+}
+.pbw-mailchimp-error-message {
+    color: #FF348B;
+}
+.pbw-mailchimp-email input:focus {
+    color: #333333;
+    background-color: #FFFFFF;
+    border-color: #e8e8e8;
+}
+
+.pbw-mailchimp-message,
+.pbw-mailchimp-success-message,
+.pbw-mailchimp-error-message {
+    display: none;
+}
+
+.pbw-mailchimp-layout-vr .pbw-mailchimp-form .pbw-mailchimp-fields {
+    display: inline-block;
+    width: 100%;
+}
+.pbw-mailchimp-layout-vr .pbw-mailchimp-form .pbw-mailchimp-subscribe {
+    margin-top: 10px;
+}
+.pbw-mailchimp-layout-hr .pbw-mailchimp-form .pbw-mailchimp-fields {
+    display: flex ;
+}
